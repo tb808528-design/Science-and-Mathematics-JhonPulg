@@ -4,7 +4,7 @@
 #( \Delta T ) = cambio de temperatura (°C)
 
 
-# Cálculo del calor sensible en Python  por ahora en español
+# Cálculo del calor sensible en Python con inputs (por ahora en español)
 # Fórmula: Q = m * c * ΔT
 
 def calcular_calor(masa, calor_especifico, temp_inicial, temp_final):
