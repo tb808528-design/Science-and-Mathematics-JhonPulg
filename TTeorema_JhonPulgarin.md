@@ -122,7 +122,7 @@ D = 2O = D - 1
 O = 2 - 1
 Respuesta: Los separan 1 año intermedio, que sería el año 0. Como en la historia no existe el año 0, en la realidad O = 0
 
-(Script de los problemas en Python)
+Python Script:
 def intermedios(A, B):
     D = abs(A - B)
     O = D - 1
@@ -139,6 +139,7 @@ print(f"Potes 1 al 5 -> D={D2}, O={O2}")
 # 3. AÑOS: 1 a.C. (-1) al 1 d.C. (1)
 D3, O3 = intermedios(-1, 1)
 print(f"Años -1 al 1 -> D={D3}, O={O3} (año 0 no existe, real O=0)")
+```
 
 6. APLICACIONES DEL TEOREMA
 
