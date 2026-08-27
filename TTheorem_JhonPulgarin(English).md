@@ -74,7 +74,7 @@ print(f"Pots 1 to 5 -> D={D2}, O={O2}")
 D3, O3 = intermediates(-1, 1)
 print(f"Years -1 to 1 -> D={D3}, O={O3} (year 0 does not exist, real O=0)")
 
-7. APPLICATIONS OF THE THEOREM
+**7. APPLICATIONS OF THE THEOREM**
 
 1. Data structures and Arrays
 2. Linked lists
@@ -84,7 +84,7 @@ print(f"Years -1 to 1 -> D={D3}, O={O3} (year 0 does not exist, real O=0)")
 6. Organization of time and space
 7. Civil Engineering and Architecture
 
-### 8. FINAL CONCLUSION
+**8. FINAL CONCLUSION**
 
 Pulgarin's Theorem is highly useful because it transforms a visual counting problem, which usually generates confusion and errors, into an exact and universal mathematical formula (O = D - 1). Its applicability is scalable, it works the same for counting pots as for calculating the intermediate levels of a 100-story building.
 
@@ -93,3 +93,4 @@ Furthermore, it proves to be a fundamental and transversal tool, used by civil e
 ---
 **Jhon Pulgarin - 2026**
 **Villavicencio, Meta - Colombia**
+
