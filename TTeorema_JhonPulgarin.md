@@ -32,14 +32,39 @@ Donde O son los espacios vacíos o intermedios entre A y B.
 
 ### 5. EJEMPLOS PRÁCTICOS
 
-**Ejemplo 1: Ascensor P2 a S1**
-A=-2, B=-1 -> D=1, O=0. No hay pisos intermedios.
+1. PROBLEMA DE ACENSOR P2 A S1:
+Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.2. Datos:
+Piso A (origen) = 2 → índice 2
+Piso B (destino) = S1 → índice -1
+ Fórmula y desarrollo:Primero hallamos la distancia total D:
+D = |índice(A) - índice(B)|
+D = |2 - (-1)|
+D = |3|
+D = 3 #Ahora hallamos los pisos intermedios O:
+O = D - 1
+O = 3 - 1
+O = 2
+  Respuesta: Lo separan 2 pisos intermedios, que son el Piso 1 y la Planta Baja.
 
-**Ejemplo 2: Potes**
-5 potes en fila. A=1, B=5 -> D=4, O=3. Hay 3 espacios entre potes.
-
-**Ejemplo 3: Años**
-Del año -1 al 1. A=-1, B=1 -> D=2, O=1. El año 0 no existe, el único intermedio teórico es 0, por eso O real = 0.
+2.PROBLEMA DE LOS POTES1. Enunciado del problema:
+Hay 5 potes en fila numerados del 1 al 5. El pote 1 y el pote 5 son los extremos. Se requiere saber cuántos potes hay entre ellos, sin contar el origen ni el destino.2. Datos:
+Pote A (origen) = 1 → índice 1
+Pote B (destino) = 5 → índice 53. Fórmula y desarrollo:
+D = |índice(A) - índice(B)|
+D = |1 - 5|
+D = |-4|
+D = 4O = D - 1
+O = 4 - 1
+O = 34. Respuesta: Los separan 3 potes intermedios, que son el 2, 3 y 4.2. PROBLEMA DE LOS AÑOS 1 a.C. y 1 d.C.1. Enunciado del problema:
+3. PROBLEMA DE LAS ERAS:Se quiere saber cuántos años completos hay entre el año 1 a.C. y el año 1 d.C., sin contar el año de origen ni el de destino.2. Datos:
+Año A = 1 a.C. → índice -1
+Año B = 1 d.C. → índice 13. Fórmula y desarrollo:
+D = |índice(A) - índice(B)|
+D = |-1 - 1|
+D = |-2|
+D = 2O = D - 1
+O = 2 - 1
+Respuesta: Los separan 1 año intermedio, que sería el año 0. Como en la historia no existe el año 0, en la realidad O = 0
 
 ### 6. SCRIPT EN PYTHON
 
