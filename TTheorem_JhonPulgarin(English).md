@@ -73,6 +73,7 @@ print(f"Pots 1 to 5 -> D={D2}, O={O2}")
 # 3. YEARS: 1 B.C. (-1) to 1 A.D. (1)
 D3, O3 = intermediates(-1, 1)
 print(f"Years -1 to 1 -> D={D3}, O={O3} (year 0 does not exist, real O=0)")
+```
 
 **7. APPLICATIONS OF THE THEOREM**
 
