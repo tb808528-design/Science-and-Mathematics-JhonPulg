@@ -32,39 +32,81 @@ Donde O son los espacios vacíos o intermedios entre A y B.
 
 ### 5. EJEMPLOS PRÁCTICOS
 
-1. PROBLEMA DE ACENSOR P2 A S1:
-Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.2. Datos:
-Piso A (origen) = 2 → índice 2
-Piso B (destino) = S1 → índice -1
- Fórmula y desarrollo:Primero hallamos la distancia total D:
-D = |índice(A) - índice(B)|
-D = |2 - (-1)|
-D = |3|
-D = 3 #Ahora hallamos los pisos intermedios O:
-O = D - 1
-O = 3 - 1
-O = 2
-  Respuesta: Lo separan 2 pisos intermedios, que son el Piso 1 y la Planta Baja.
+## 1. Problema del Ascensor (Piso 2 a S1)
 
-2.PROBLEMA DE LOS POTES1. Enunciado del problema:
-Hay 5 potes en fila numerados del 1 al 5. El pote 1 y el pote 5 son los extremos. Se requiere saber cuántos potes hay entre ellos, sin contar el origen ni el destino.2. Datos:
-Pote A (origen) = 1 → índice 1
-Pote B (destino) = 5 → índice 53. Fórmula y desarrollo:
-D = |índice(A) - índice(B)|
-D = |1 - 5|
-D = |-4|
-D = 4O = D - 1
-O = 4 - 1
-O = 34. Respuesta: Los separan 3 potes intermedios, que son el 2, 3 y 4.2. PROBLEMA DE LOS AÑOS 1 a.C. y 1 d.C.1. Enunciado del problema:
-3. PROBLEMA DE LAS ERAS:Se quiere saber cuántos años completos hay entre el año 1 a.C. y el año 1 d.C., sin contar el año de origen ni el de destino.2. Datos:
-Año A = 1 a.C. → índice -1
-Año B = 1 d.C. → índice 13. Fórmula y desarrollo:
-D = |índice(A) - índice(B)|
-D = |-1 - 1|
-D = |-2|
-D = 2O = D - 1
-O = 2 - 1
-Respuesta: Los separan 1 año intermedio, que sería el año 0. Como en la historia no existe el año 0, en la realidad O = 0
+### Enunciado del problema
+Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.
+
+### Datos
+* **Piso A (origen):** 2 → índice $2$
+* **Piso B (destino):** S1 → índice $-1$
+
+### Fórmula y desarrollo
+Primero hallamos la distancia total ($D$):
+$$D = |\text{índice}(A) - \text{índice}(B)|$$
+$$D = |2 - (-1)|$$
+$$D = |3| = 3$$
+
+Ahora hallamos los pisos intermedios ($O$):
+$$O = D - 1$$
+$$O = 3 - 1 = 2$$
+
+### Respuesta
+Lo separan **2 pisos intermedios**, que son el **Piso 1** y la **Planta Baja**.
+
+---
+
+## 2. Problema de los Potes
+
+### Enunciado del problema
+Hay 5 potes en fila numerados del 1 al 5. El pote 1 y el pote 5 son los extremos. Se requiere saber cuántos potes hay entre ellos, sin contar el origen ni el destino.
+
+### Datos
+* **Pote A (origen):** 1 → índice $1$
+* **Pote B (destino):** 5 → índice $5$
+
+### Fórmula y desarrollo
+Primero hallamos la distancia total ($D$):
+$$D = |\text{índice}(A) - \text{índice}(B)|$$
+$$D = |1 - 5|$$
+$$D = |-4| = 4$$
+
+Ahora hallamos los potes intermedios ($O$):
+$$O = D - 1$$
+$$O = 4 - 1 = 3$$
+
+### Respuesta
+Los separan **3 potes intermedios**, que son el **2, 3 y 4**.
+
+---
+
+## 3. Problema de las Eras (1 a.C. y 1 d.C.)
+
+### Enunciado del problema
+Se quiere saber cuántos años completos hay entre el año 1 a.C. y el año 1 d.C., sin contar el año de origen ni el de destino.
+
+### Datos
+* **Año A (origen):** 1 a.C. → índice $-1$
+* **Año B (destino):** 1 d.C. → índice $1$
+
+### Fórmula y desarrollo
+Primero hallamos la distancia total teórica ($D$):
+$$D = |\text{índice}(A) - \text{índice}(B)|$$
+$$D = |-1 - 1|$$
+$$D = |-2| = 2$$
+
+Ahora hallamos los años intermedios aplicando la fórmula estándar ($O$):
+$$O = D - 1$$
+$$O = 2 - 1 = 1$$
+
+### Ajuste Histórico Real
+La fórmula matemática arroja un resultado teórico de 1 año intermedio (que correspondería al año 0). Sin embargo, en el registro histórico y cronológico cristiano **no existe el año 0**. El año 1 d.C. sigue inmediatamente al año 1 a.C.
+
+Por lo tanto, en la realidad histórica:
+$$O = 0$$
+
+### Respuesta
+En la realidad cronológica, **0 años completos** separan el año 1 a.C. del 1 d.C.
 
 ### 6. SCRIPT EN PYTHON
 
