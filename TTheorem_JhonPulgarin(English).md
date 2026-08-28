@@ -1,176 +1,146 @@
-# JHON PULGARIN'S THEOREM
-Treatise on Spatial Discontinuity and Zero
+# Jhon Pulgarin's Theorem and the spatial discontinuity of the architectural zero
 
-**Author:** Jhon Pulgarin
-**Villavicencio, Meta - Colombia**
-**August 27, 2026**
+**Treatise on Spatial Discontinuity and the Architectural Zero**
 
-### Jhon Pulgarin Theorem
-Treatise on Spatial Discontinuity and the Architectural Zero
+---
 
-**1. Introduction and Historical Context: A Centuries-Old Problem**
-The contradiction between abstract counting and physical reality is not a modern confusion. It is a logical dilemma with centuries of history that affects how humans organize time, space, and information. The main origin of this conflict lies in the historical difficulty of accepting and integrating the concept of 'zero' as a physical entity and not just a mathematical one.
-The clearest example is found in our current calendar. The chronological system goes directly from year 1 Before Christ (B.C.) to year 1 Anno Domini (A.D.). Physically, 'year zero' never existed in official history. This causes that, when calculating the time elapsed between 1 B.C. and 1 A.D., pure mathematics dictates a distance of 2 units, when in the real timeline there is only a change of era with no year in between.
+### 1. HISTORICAL INTRODUCTION
 
-**2. The Logical Discrepancy: Mathematicians vs. Programmers**
-This historical gap has provoked a classic debate in science and technology, dividing logic into two well-defined sides:
-*   **The Pure Mathematical Approach:** Mathematicians operate under a continuous number line where zero is indispensable.
-*   **The Programming and Engineering Approach:** Software developers and engineers constantly collide with this through the famous 'Fencepost Error' or zero-based indexing problems.
+1. Introduction and Historical Context: A Centuries-Old Problem
+The contradiction between abstract counting and physical reality is not a modern confusion. It is a logical dilemma with centuries of history that affects the way human beings organize time, space, and information. The main origin of this conflict lies in the historical difficulty in accepting and integrating the concept of 'zero' as a physical entity and not just a mathematical one.
+The clearest example of this is found in our current calendar. The chronological system goes directly from the year 1 Before Christ (B.C.) to the year 1 Anno Domini (A.D.). Physically, the 'year zero' never existed in official history. This generates that, when calculating the time elapsed between the year 1 B.C. and the year 1 A.D., pure mathematics dictates a distance of 2 units, when in the real timeline there is only a change of era with no year in between.
 
-**3. Case Study: The Elevator Dilemma**
-A person lives on floor 2 and his garage is in basement 1. How many floors separate his house from his parking space?
+2. The Logical Discrepancy: Mathematicians vs. Programmers
+This historical gap has caused a classic debate in the world of science and technology, dividing logic into two well-defined camps:
+• The Pure Mathematical Approach: Mathematicians operate under a continuous number line where zero is indispensable. For abstract mathematics, zero represents the point of origin or equilibrium. By ignoring whether zero has a real physical representation, their calculations always assume an intermediate space that artificially increases physical distances.
+• The Programming and Engineering Approach: Software developers and engineers constantly clash with this through the famous 'Fencepost Error' or zero-based indexing problems (where lists start at 0 and not 1). A programmer knows that one thing is the number of intermediate elements and a very different thing is the index of the positions, requiring constant adjustments in the code so that applications do not fail when interacting with the real world.
 
-### OFFICIAL FORMULA
+### 2. CASE STUDY: THE ELEVATOR
+The Case Study: The Elevator Dilemma case why Jhon Pulgarin found the problem with 0
+Jhon Pulgarin's Theory is born from direct observation of this phenomenon in everyday architecture:
+A person lives on floor 2 and his parking space is in basement 1. How many floors separate his home from his parking space?
+If this problem is introduced linearly into an Artificial Intelligence or a theoretical mathematical system, the strict mathematical calculation establishes that the distance is 3 (calculating 2 - (-1) = 3). However, in real life, the elevator buttons in that building show that when going down from floor 2 to basement 1 there are only 2 buttons
+                     OFFICIAL FORMULA
 
-**O = |index(A) - index(B)| - 1**
+O = |index(A) - index(B)| - 1
 
 Where:
-- O = Number of things IN BETWEEN A and B, not counting A or B.
+- O = Quantity of things that are IN BETWEEN A and B, not counting A nor B.
 - index(A) = Position of the first element
 - index(B) = Position of the second element
 - | | = Absolute value
-- -1 = Because subtracting indices counts one extreme, minus one corrects everything
+- -1 = Because when subtracting indices you count one extreme, minus one corrects everything
 
-**THIS IS THE FORMULA THAT REPLACES ALL PREVIOUS ONES.**
+### 3. THEOREM STATEMENT
 
-**4. FORMAL STATEMENT OF THE THEOREM**
-Given two distinct positions A and B with indices index(A) and index(B), the number of strictly intermediate elements between them is equal to:
-**O = |index(A) - index(B)| - 1**
+Given two different positions A and B with indices
+index(A) and index(B), the number of elements
+strictly intermediate between them is equal to:
 
-**5. PROOF (QED)**
-1. The absolute distance between indices is: D = |index(A) - index(B)|
+O = |index(A) - index(B)| - 1
+
+Where O are the empty or intermediate spaces between A and B.
+
+### 4. FORMAL PROOF (QED)
+
+1. The absolute distance between indices is:
+   D = |index(A) - index(B)|
+
 2. D includes the distance from A to B inclusive.
-3. To count ONLY the interior, we must exclude the extremes A and B. We subtract 1.
-4. Result: O = D - 1 = |index(A) - index(B)| - 1
-5. QED
 
-Properties:
+3. To count ONLY the interior, we must exclude
+   the extremes A and B. We subtract 1.
+
+4. It remains: O = D - 1 = |index(A) - index(B)| - 1
+
+### 5. QED - Quod Erat Demonstrandum (as was to be demonstrated)
+Proven properties:
 - If A and B are consecutive: O = 0
 - If A = B: O = -1 (empty interval by definition)
+- O >= 0 for distinct non-consecutive positions
 - Symmetric: O(A,B) = O(B,A) thanks to absolute value
-- Works in any order
+- Works in any order.
 
-**6. COMPLETE EXAMPLES**
-# Index and Interval Problems
+## 6. COMPLETE EXAMPLES
 
-## 1. Elevator Problem (Floor 2 to B1)
-
-### Problem Statement
-An elevator is on the 2nd floor and must go down to B1 (Basement 1). We need to determine how many floors separate them, excluding the starting and destination floors.
+### 1. Elevator Problem (Floor 2 to B1)
+An elevator is on floor 2 and must go down to B1 (Basement 1). It is required to know how many floors separate them, not counting the origin floor nor the destination floor.
 
 ### Data
-* **Floor A (Origin)** = 2 → Index: 2
-* **Floor B (Destination)** = B1 → Index: -1
+To avoid "ghost floors", we assign real consecutive indices:
+* **Floor A (origin):** Floor 2 $\rightarrow$ index $2$
+* **Floor B (destination):** Basement 1 $\rightarrow$ index $0$
+*(Note: The intermediate Floor 1 occupies index 1)*
 
-### Formula and Development
-First, we find the total distance ($D$):
-$$D = |\text{Index}(A) - \text{Index}(B)|$$
-$$D = |2 - (-1)|$$
-$$D = |3|$$
-$$D = 3$$
+### Formula and development
+First we find the total distance ($D$):
+$$D = |\text{index}(A) - \text{index}(B)|$$
+$$D = |2 - 0|$$
+$$D = |2| = 2$$
 
-Now, we find the intermediate floors ($O$):
+Now we find the intermediate floors ($O$):
 $$O = D - 1$$
-$$O = 3 - 1$$
-$$O = 2$$
+$$O = 2 - 1 = 1$$
 
 ### Answer
-There are **2 intermediate floors** separating them, which are the 1st Floor and the Ground Floor.
+It is separated by **only 1 intermediate floor**, which is **Floor 1**.
 
 ---
 
-## 2. The Pots Problem
+## 2. Pots Problem
 
-### Problem Statement
-There are 5 pots in a row numbered 1 to 5. Pot 1 and Pot 5 are at the extremes. We need to determine how many pots are between them, excluding the starting and destination pots.
+### Problem statement
+There are 5 pots in a row numbered from 1 to 5. Pot 1 and pot 5 are the extremes. It is required to know how many pots are between them, not counting the origin nor the destination.
 
 ### Data
-* **Pot A (Origin)** = 1 → Index: 1
-* **Pot B (Destination)** = 5 → Index: 5
+Since the pots in the physical world are already consecutive by nature, their numbers are equivalent to their indices:
+* **Pot A (origin):** Pot 1 $\rightarrow$ index $1$
+* **Pot B (destination):** Pot 5 $\rightarrow$ index $5$
 
-### Formula and Development
-First, we find the total distance ($D$):
-$$D = |\text{Index}(A) - \text{Index}(B)|$$
+### Formula and development
+First we find the total distance ($D$):
+$$D = |\text{index}(A) - \text{index}(B)|$$
 $$D = |1 - 5|$$
-$$D = |-4|$$
-$$D = 4$$
+$$D = |-4| = 4$$
 
-Now, we find the intermediate pots ($O$):
+Now we find the intermediate pots ($O$):
 $$O = D - 1$$
-$$O = 4 - 1$$
-$$O = 3$$
+$$O = 4 - 1 = 3$$
 
 ### Answer
-There are **3 intermediate pots** separating them, which are pots 2, 3, and 4.
+They are separated by **3 intermediate pots**, which are **2, 3 and 4**.
 
 ---
 
-## 3. The Eras Problem (1 BC to 1 AD)
+## 3. Eras Problem (1 B.C. and 1 A.D.)
 
-### Problem Statement
-We want to find out how many full years there are between 1 BC and 1 AD, excluding the starting and destination years.
+### Problem statement
+It is wanted to know how many full years are between the year 1 B.C. and the year 1 A.D., not counting the year of origin nor the destination.
 
 ### Data
-* **Year A (Origin)** = 1 BC → Index: -1
-* **Year B (Destination)** = 1 AD → Index: 1
+Given that in conventional historical chronology **year 0 does not exist** (year 1 A.D. began immediately after year 1 B.C. ended), we assign real consecutive indices to reflect this continuity:
+* **Year A (origin):** 1 B.C. $\rightarrow$ index $0$
+* **Year B (destination):** 1 A.D. $\rightarrow$ index $1$
 
-### Mathematical Formula and Development
-First, we calculate the theoretical distance ($D$):
-$$D = |\text{Index}(A) - \text{Index}(B)|$$
-$$D = |-1 - 1|$$
-$$D = |-2|$$
-$$D = 2$$
+### Formula and development
+First we find the total distance ($D$):
+$$D = |\text{index}(A) - \text{index}(B)|$$
+$$D = |0 - 1|$$
+$$D = |-1| = 1$$
 
-Now, we find the theoretical intermediate years ($O$):
+Now we find the intermediate years ($O$):
 $$O = D - 1$$
-$$O = 2 - 1$$
-$$O = 1$$
+$$O = 1 - 1 = 0$$
 
-### Historical Correction and Final Answer
-The mathematical formula suggests there is 1 intermediate year (which would correspond to "Year 0"). However, **in the historical calendar, Year 0 does not exist**. The year 1 AD follows immediately after 1 BC. 
+### Answer
+They are separated by **0 intermediate years**. Year 1 A.D. is immediately consecutive to year 1 B.C.
+
+### Real Historical Adjustment
+The mathematical formula yields a theoretical result of 1 intermediate year (which would correspond to year 0). However, in the Christian historical and chronological record **year 0 does not exist**. Year 1 A.D. follows immediately after year 1 B.C.
 
 Therefore, in historical reality:
 $$O = 0$$
 
-There are **0 full years** separating 1 BC and 1 AD.
-
-**Python Script:**
-```python
-def intermediates(A, B):
-    D = abs(A - B)
-    O = D - 1
-    return D, O
-
-# 1. ELEVATOR: Floor 2 to S1
-D1, O1 = intermediates(2, -1)
-print(f"Elevator 2 to S1 -> D={D1}, O={O1}")
-
-# 2. POTS: Pot 1 to 5
-D2, O2 = intermediates(1, 5)
-print(f"Pots 1 to 5 -> D={D2}, O={O2}")
-
-# 3. YEARS: 1 B.C. (-1) to 1 A.D. (1)
-D3, O3 = intermediates(-1, 1)
-print(f"Years -1 to 1 -> D={D3}, O={O3} (year 0 does not exist, real O=0)")
-```
-
-**7. APPLICATIONS OF THE THEOREM**
-
-1. Data structures and Arrays
-2. Linked lists
-3. Theory of open intervals and sets
-4. Combinatorial counting and Sequence analysis
-5. Programming (solves Fencepost Error)
-6. Organization of time and space
-7. Civil Engineering and Architecture
-
-**8. FINAL CONCLUSION**
-
-Pulgarin's Theorem is highly useful because it transforms a visual counting problem, which usually generates confusion and errors, into an exact and universal mathematical formula (O = D - 1). Its applicability is scalable, it works the same for counting pots as for calculating the intermediate levels of a 100-story building.
-
-Furthermore, it proves to be a fundamental and transversal tool, used by civil engineers, architects and programmers as a logical basis to optimize structural calculations and to program automated systems such as an elevator route.
-
----
-**Jhon Pulgarin - 2026**
-**Villavicencio, Meta - Colombia**
+### Answer
+In chronological reality, **0 full years** separate year 1 B.C. from year 1 A.D.
 
