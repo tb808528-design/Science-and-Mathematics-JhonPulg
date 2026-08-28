@@ -172,22 +172,58 @@ En la realidad cronológica, **0 años completos** separan el año 1 a.C. del 1 
 ### SCRIPT EN PYTHON
 
 ```python
-def intermedios(A, B):
-    D = abs(A - B)
-    O = D - 1
-    return D, O
+def calcular_elementos_intermedios(indice_a, indice_b):
+    """
+    Aplica la fórmula universal: O = |índice(A) - índice(B)| - 1
+    """
+    distancia = abs(indice_a - indice_b)
+    intermedios = distancia - 1
+    return intermedios
 
-# Ejemplo Ascensor
-D1, O1 = intermedios(-2, -1)
-print(f"P2 a S1 -> D={D1}, O={O1}")
+# =====================================================================
+# 1. PROBLEMA DEL ASCENSOR (Piso 2 a Sótano 1 - Sin Planta Baja)
+# Escala real continua: S1 = 0, Piso 1 = 1, Piso 2 = 2
+# =====================================================================
+piso_origen_idx = 2  # Piso 2
+piso_destino_idx = 0  # Sótano 1
 
-# Ejemplo Potes
-D2, O2 = intermedios(1, 5)
-print(f"Potes 1 a 5 -> D={D2}, O={O2}")
+pisos_intermedios = calcular_elementos_intermedios(piso_origen_idx, piso_destino_idx)
 
-# Ejemplo Años
-D3, O3 = intermedios(-1, 1)
-print(f"Años -1 a 1 -> D={D3}, O={O3} (año 0 no existe, real O=0)")
+print("--- 1. PROBLEMA DEL ASCENSOR ---")
+print(f"Índice Origen (Piso 2): {piso_origen_idx}")
+print(f"Índice Destino (S1): {piso_destino_idx}")
+print(f"Pisos intermedios reales que los separan: {pisos_intermedios}\n")
+
+
+# =====================================================================
+# 2. PROBLEMA DE LOS POTES EN FILA
+# Escala: Pote 1 = 1, Pote 5 = 5
+# =====================================================================
+pote_origen_idx = 1
+pote_destino_idx = 5
+
+potes_intermedios = calcular_elementos_intermedios(pote_origen_idx, pote_destino_idx)
+
+print("--- 2. PROBLEMA DE LOS POTES ---")
+print(f"Índice Origen (Pote 1): {pote_origen_idx}")
+print(f"Índice Destino (Pote 5): {pote_destino_idx}")
+print(f"Potes intermedios reales que los separan: {potes_intermedios}\n")
+
+
+# =====================================================================
+# 3. PROBLEMA DE LAS ERAS (1 a.C. a 1 d.C. - Sin Año 0 Histórico)
+# Escala real continua: 1 a.C. = 0, 1 d.C. = 1
+# =====================================================================
+ano_origen_idx = 0  # 1 a.C.
+ano_destino_idx = 1  # 1 d.C.
+
+anos_intermedios = calcular_elementos_intermedios(ano_origen_idx, ano_destino_idx)
+
+print("--- 3. PROBLEMA DE LAS ERAS ---")
+print(f"Índice Origen (1 a.C.): {ano_origen_idx}")
+print(f"Índice Destino (1 d.C.): {ano_destino_idx}")
+print(f"Años intermedios reales que los separan: {anos_intermedios}\n")
+
 ```
 ### 7. APLICACIONES DEL TEOREMA
 
