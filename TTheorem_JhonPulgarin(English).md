@@ -51,9 +51,88 @@ Properties:
 - Works in any order
 
 **6. COMPLETE EXAMPLES**
-**1. Elevator Problem P2 to S1:** A=2, B=-1 -> D=|2-(-1)|=3, O=2 (Floor 1 and Ground Floor)
-**2. Pots Problem:** Pots 1 to 5 -> D=|1-5|=4, O=3 (Pots 2, 3 and 4)
-**3. Years Problem 1 B.C. and 1 A.D.:** A=-1, B=1 -> D=2, O=1 (Year 0, which historically does not exist, so real O=0)
+# Index and Interval Problems
+
+## 1. Elevator Problem (Floor 2 to B1)
+
+### Problem Statement
+An elevator is on the 2nd floor and must go down to B1 (Basement 1). We need to determine how many floors separate them, excluding the starting and destination floors.
+
+### Data
+* **Floor A (Origin)** = 2 → Index: 2
+* **Floor B (Destination)** = B1 → Index: -1
+
+### Formula and Development
+First, we find the total distance ($D$):
+$$D = |\text{Index}(A) - \text{Index}(B)|$$
+$$D = |2 - (-1)|$$
+$$D = |3|$$
+$$D = 3$$
+
+Now, we find the intermediate floors ($O$):
+$$O = D - 1$$
+$$O = 3 - 1$$
+$$O = 2$$
+
+### Answer
+There are **2 intermediate floors** separating them, which are the 1st Floor and the Ground Floor.
+
+---
+
+## 2. The Pots Problem
+
+### Problem Statement
+There are 5 pots in a row numbered 1 to 5. Pot 1 and Pot 5 are at the extremes. We need to determine how many pots are between them, excluding the starting and destination pots.
+
+### Data
+* **Pot A (Origin)** = 1 → Index: 1
+* **Pot B (Destination)** = 5 → Index: 5
+
+### Formula and Development
+First, we find the total distance ($D$):
+$$D = |\text{Index}(A) - \text{Index}(B)|$$
+$$D = |1 - 5|$$
+$$D = |-4|$$
+$$D = 4$$
+
+Now, we find the intermediate pots ($O$):
+$$O = D - 1$$
+$$O = 4 - 1$$
+$$O = 3$$
+
+### Answer
+There are **3 intermediate pots** separating them, which are pots 2, 3, and 4.
+
+---
+
+## 3. The Eras Problem (1 BC to 1 AD)
+
+### Problem Statement
+We want to find out how many full years there are between 1 BC and 1 AD, excluding the starting and destination years.
+
+### Data
+* **Year A (Origin)** = 1 BC → Index: -1
+* **Year B (Destination)** = 1 AD → Index: 1
+
+### Mathematical Formula and Development
+First, we calculate the theoretical distance ($D$):
+$$D = |\text{Index}(A) - \text{Index}(B)|$$
+$$D = |-1 - 1|$$
+$$D = |-2|$$
+$$D = 2$$
+
+Now, we find the theoretical intermediate years ($O$):
+$$O = D - 1$$
+$$O = 2 - 1$$
+$$O = 1$$
+
+### Historical Correction and Final Answer
+The mathematical formula suggests there is 1 intermediate year (which would correspond to "Year 0"). However, **in the historical calendar, Year 0 does not exist**. The year 1 AD follows immediately after 1 BC. 
+
+Therefore, in historical reality:
+$$O = 0$$
+
+There are **0 full years** separating 1 BC and 1 AD.
 
 **Python Script:**
 ```python
