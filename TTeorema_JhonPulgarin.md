@@ -85,7 +85,7 @@ Propiedades demostradas:
 - Simetrico: O(A,B) = O(B,A) gracias al valor absoluto
 - Funciona en cualquier orden.
 
-## 1. EJEMPLOS COMPLETOS
+## 6. EJEMPLOS COMPLETOS
 
 ### Problema del Ascensor (Piso 2 a S1)
 Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.
@@ -161,7 +161,7 @@ $$O = 0$$
 ### Respuesta
 En la realidad cronológica, **0 años completos** separan el año 1 a.C. del 1 d.C.
 
-### 6. SCRIPT EN PYTHON
+### SCRIPT EN PYTHON
 
 ```python
 def intermedios(A, B):
