@@ -87,7 +87,7 @@ Propiedades demostradas:
 
 ## 6. EJEMPLOS COMPLETOS
 
-### Problema del Ascensor (Piso 2 a S1)
+### 1. Problema del Ascensor (Piso 2 a S1)
 Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.
 
 ### Datos
