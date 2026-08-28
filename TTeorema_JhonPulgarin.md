@@ -91,21 +91,24 @@ Propiedades demostradas:
 Un ascensor está en el piso 2 y debe bajar hasta el S1 (Sótano 1). Se requiere saber cuántos pisos lo separan, sin contar el piso de origen ni el de destino.
 
 ### Datos
-* **Piso A (origen):** 2 → índice $2$
-* **Piso B (destino):** S1 → índice $-1$
+Para evitar "pisos fantasma", asignamos índices consecutivos reales:
+* **Piso A (origen):** Piso 2 $\rightarrow$ índice $2$
+* **Piso B (destino):** Sótano 1 $\rightarrow$ índice $0$
+*(Nota: El Piso 1 intermedio ocupa el índice 1)*
 
 ### Fórmula y desarrollo
 Primero hallamos la distancia total ($D$):
 $$D = |\text{índice}(A) - \text{índice}(B)|$$
-$$D = |2 - (-1)|$$
-$$D = |3| = 3$$
+$$D = |2 - 0|$$
+$$D = |2| = 2$$
 
 Ahora hallamos los pisos intermedios ($O$):
 $$O = D - 1$$
-$$O = 3 - 1 = 2$$
+$$O = 2 - 1 = 1$$
 
 ### Respuesta
-Lo separan **2 pisos intermedios**, que son el **Piso 1** y la **Planta Baja**.
+Lo separa **1 solo piso intermedio**, que es el **Piso 1**.
+
 
 ---
 
@@ -115,8 +118,9 @@ Lo separan **2 pisos intermedios**, que son el **Piso 1** y la **Planta Baja**.
 Hay 5 potes en fila numerados del 1 al 5. El pote 1 y el pote 5 son los extremos. Se requiere saber cuántos potes hay entre ellos, sin contar el origen ni el destino.
 
 ### Datos
-* **Pote A (origen):** 1 → índice $1$
-* **Pote B (destino):** 5 → índice $5$
+Como los potes en el mundo físico ya son consecutivos por naturaleza, sus números equivalen a sus índices:
+* **Pote A (origen):** Pote 1 $\rightarrow$ índice $1$
+* **Pote B (destino):** Pote 5 $\rightarrow$ índice $5$
 
 ### Fórmula y desarrollo
 Primero hallamos la distancia total ($D$):
@@ -139,18 +143,22 @@ Los separan **3 potes intermedios**, que son el **2, 3 y 4**.
 Se quiere saber cuántos años completos hay entre el año 1 a.C. y el año 1 d.C., sin contar el año de origen ni el de destino.
 
 ### Datos
-* **Año A (origen):** 1 a.C. → índice $-1$
-* **Año B (destino):** 1 d.C. → índice $1$
+Dado que en la cronología histórica convencional **el año 0 no existe** (el año 1 d.C. comenzó inmediatamente después de terminar el año 1 a.C.), asignamos índices consecutivos reales para reflejar esta continuidad:
+* **Año A (origen):** 1 a.C. $\rightarrow$ índice $0$
+* **Año B (destino):** 1 d.C. $\rightarrow$ índice $1$
 
 ### Fórmula y desarrollo
-Primero hallamos la distancia total teórica ($D$):
+Primero hallamos la distancia total ($D$):
 $$D = |\text{índice}(A) - \text{índice}(B)|$$
-$$D = |-1 - 1|$$
-$$D = |-2| = 2$$
+$$D = |0 - 1|$$
+$$D = |-1| = 1$$
 
-Ahora hallamos los años intermedios aplicando la fórmula estándar ($O$):
+Ahora hallamos los años intermedios ($O$):
 $$O = D - 1$$
-$$O = 2 - 1 = 1$$
+$$O = 1 - 1 = 0$$
+
+### Respuesta
+Los separan **0 años intermedios**. El año 1 d.C. es inmediatamente consecutivo al año 1 a.C.
 
 ### Ajuste Histórico Real
 La fórmula matemática arroja un resultado teórico de 1 año intermedio (que correspondería al año 0). Sin embargo, en el registro histórico y cronológico cristiano **no existe el año 0**. El año 1 d.C. sigue inmediatamente al año 1 a.C.
