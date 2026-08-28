@@ -144,3 +144,77 @@ $$O = 0$$
 ### Answer
 In chronological reality, **0 full years** separate year 1 B.C. from year 1 A.D.
 
+### PYTHON SCRIPT
+
+```python
+def calculate_intermediate_elements(index_a, index_b):
+    """
+    Applies the universal formula: O = |index(A) - index(B)| - 1
+    """
+    distance = abs(index_a - index_b)
+    intermediate = distance - 1
+    return intermediate
+
+# =====================================================================
+# 1. ELEVATOR PROBLEM (Floor 2 to Basement 1 - Without Ground Floor)
+# Real continuous scale: B1 = 0, Floor 1 = 1, Floor 2 = 2
+# =====================================================================
+origin_floor_idx = 2  # Floor 2
+destination_floor_idx = 0  # Basement 1
+
+intermediate_floors = calculate_intermediate_elements(origin_floor_idx, destination_floor_idx)
+
+print("--- 1. ELEVATOR PROBLEM ---")
+print(f"Origin Index (Floor 2): {origin_floor_idx}")
+print(f"Destination Index (B1): {destination_floor_idx}")
+print(f"Real intermediate floors separating them: {intermediate_floors}\n")
+
+# =====================================================================
+# 2. POTS IN A ROW PROBLEM
+# Scale: Pot 1 = 1, Pot 5 = 5
+# =====================================================================
+origin_pot_idx = 1
+destination_pot_idx = 5
+
+intermediate_pots = calculate_intermediate_elements(origin_pot_idx, destination_pot_idx)
+
+print("--- 2. POTS PROBLEM ---")
+print(f"Origin Index (Pot 1): {origin_pot_idx}")
+print(f"Destination Index (Pot 5): {destination_pot_idx}")
+print(f"Real intermediate pots separating them: {intermediate_pots}\n")
+
+# =====================================================================
+# 3. ERAS PROBLEM (1 B.C. to 1 A.D. - Without Historical Year 0)
+# Real continuous scale: 1 B.C. = 0, 1 A.D. = 1
+# =====================================================================
+origin_year_idx = 0  # 1 B.C.
+destination_year_idx = 1  # 1 A.D.
+
+intermediate_years = calculate_intermediate_elements(origin_year_idx, destination_year_idx)
+
+print("--- 3. ERAS PROBLEM ---")
+print(f"Origin Index (1 B.C.): {origin_year_idx}")
+print(f"Destination Index (1 A.D.): {destination_year_idx}")
+print(f"Real intermediate years separating them: {intermediate_years}\n")
+```
+### 7. APPLICATIONS OF THE THEOREM
+
+1.  Data structures and Arrays
+2.  Linked lists
+3.  Open interval theory and sets
+4.  Combinatorial counting and Sequence analysis
+5.  Programming (solves Fencepost Error)
+6.  Time and space organization
+7.  Civil Engineering and Architecture
+
+### 8. FINAL CONCLUSION
+
+The Pulgarin Theorem is highly useful because it transforms a visual counting problem, which usually generates confusion and errors, into an exact and universal mathematical formula (O = D - 1). Its applicability is scalable, it works the same for counting pots as for calculating the intermediate levels of a 100-story building.
+
+Furthermore, it proves to be a fundamental and transversal tool, used by civil engineers, architects and programmers as a logical basis to optimize structural calculations and to program automated systems such as the route of an elevator.
+
+---
+**Jhon Pulgarin - 2026**
+**Villavicencio, Meta - Colombia**
+
+
