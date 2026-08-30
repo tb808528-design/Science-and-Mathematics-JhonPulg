@@ -281,7 +281,7 @@ def ejecutar_casos_estudio():
 
 def ejecutar_simulacion_empirica(num_simulaciones=10000):
     print("----------------------------------------------------")
-    print(f"  EJECUTANDO PRUEBA EMPÍRICA ({num_simulations} ITERACIONES)")
+    print(f"  EJECUTANDO PRUEBA EMPÍRICA ({num_simulaciones} ITERACIONES)")
     print("----------------------------------------------------")
     for _ in range(num_simulaciones):
         # Generar dos índices aleatorios en un rango amplio de la recta numérica
