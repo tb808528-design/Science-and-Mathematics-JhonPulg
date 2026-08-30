@@ -252,7 +252,7 @@ def run_smt_formal_verification():
     print("  RUNNING FORMAL VERIFICATION (THEOREMS PROVER - Z3)")
     print("----------------------------------------------------")
     try:
-        from z3 import Solver, Int, abs as z3_abs, unsat
+        from z3 import Solver, Int, Abs as z3_abs, unsat
         a, b = Int('a'), Int('b')
         print("✅ FORMAL PROOF: Properties hold for all INFINITE integers.\n")
     except ImportError:
