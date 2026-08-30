@@ -297,7 +297,7 @@ def ejecutar_verificacion_formal_smt():
     print("  VERIFICACIÓN FORMAL (PROBADOR DE TEOREMAS - Z3)")
     print("----------------------------------------------------")
     try:
-        from z3 import Solver, Int, abs as z3_abs, unsat
+        from z3 import Solver, Int, Abs as z3_abs, unsat
         
         # Definir variables enteras simbólicas para el infinito matemático
         a = Int('a')
